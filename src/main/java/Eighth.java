@@ -19,9 +19,8 @@ public class Eighth {
         Scanner java = new Scanner(System.in);
         boolean javaValue = java.nextBoolean();
 
-        System.out.println("Ім'я: " + nameValue + ";");
-        System.out.println("Вік: " + ageValue + ";");
-        System.out.println("Зріст: " + heightValue + ";");
-        System.out.println("Чи подобається Java: " + javaValue + ";");
+        System.out.printf("%n%-10s %-5s %-10s %-20s%n", "Ім'я", "Вік", "Зріст", "Подобається java");
+        System.out.printf("-".repeat(50));
+        System.out.printf("%n%-10s %-5d %-10f %-20b%n", nameValue, ageValue, heightValue, javaValue);
     }
 }
